@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+.banner-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f3c8dd;
+    margin-bottom: 10px;
+}
+
+.banner-intro {
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #f3c8dd !important;
+    max-width: 500px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.banner-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #4b1535;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner-button:hover {
+    background-color: #d183a9;
+    color: #3a345b;
+}
+
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background-color: #002147;
+}
+
+.banner-text {
+    flex: 1;
+    max-width: 50%; /* Fix layout issue */
+}
+
+.banner-image {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner-image img {
+    max-width: 450px; /* Prevents it from being too big or too small */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .banner-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner-text, .banner-image {
+        max-width: 100%;
+    }
+
+    .banner-subtitle {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,327 @@
+.romance-page {
+  background: url('../../../assets/romancebg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Playfair Display', serif;
+  color: #6b1a22;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.romance-header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, rgba(253, 200, 220, 0.9), rgba(238, 219, 201, 0.7)), url('../../../assets/romancebg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  border-bottom: 5px solid #ab3f60;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.romance-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2.5rem 3rem;
+  background: #f5e1da;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.romance-text {
+  max-width: 55%;
+}
+
+.romance-title {
+  margin-top: 10px;
+  font-size: 4rem;
+  font-family: 'Dancing Script', cursive;
+  color: #ab3f60;
+  margin-bottom: 20px;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  letter-spacing: 1px;
+}
+
+.romance-subtitle {
+  font-size: 2rem;
+  font-family: 'Dancing Script', cursive;
+  color: #6b1a22;
+  max-width: 600px;
+  margin: 15px auto;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.image-frame {
+  padding: 12px;
+  border: 6px solid #6b1a22;
+  border-radius: 14px;
+  background: white;
+  margin-top: 30px;
+}
+
+.framed-image {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+}
+
+.romance-main {
+  flex-grow: 1;
+  padding: 40px 20px;
+}
+
+.romance-section-title {
+  font-size: 3rem;
+  color: #83092e;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.romance-book-list {
+  display: flex;
+  justify-content: center;
+  gap: 115px;
+  flex-wrap: wrap;
+}
+
+.romance-book-card {
+  width: 40%; /* Set width to match Thriller */
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.romance-book-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.romance-book-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.romance-book-card:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+.romance-book-cover {
+  width: 40%;
+  height: auto;
+  border-radius: 10px;
+  border: 3px solid #ab3f60;
+}
+
+.romance-book-cover-container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ecdbc9;
+}
+
+.romance-book-info {
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.romance-book-title {
+  font-size: 1.6rem;
+  color: #ab3f60;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+}
+
+.romance-book-description {
+  font-size: 1rem;
+  color: #6b1a22;
+  margin-bottom: 15px;
+  font-family: 'Lora', serif;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.romance-read-more {
+  background-color: #a35766;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  align-self: center;
+}
+
+.romance-read-more:hover {
+  background-color: #83092e;
+}
+
+.romance-quote {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: rgba(236, 219, 201, 0.4);
+  margin: 40px 0;
+  border-radius: 10px;
+}
+
+.romance-blockquote {
+  font-size: 2rem;
+  font-style: italic;
+  color: #ab3f60;
+  margin-bottom: 20px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.romance-cite {
+  font-size: 1.3rem;
+  color: #6b1a22;
+}
+
+.romance-footer {
+  background-color: #83092e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.romance-back-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.romance-back-link:hover {
+  color: #ab3f60;
+}
+
+@keyframes glowText {
+  0% {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0 0 25px #ff0066, 0 0 5px #ff0066;
+  }
+  100% {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 0 0 15px #ff0066, 0 0 10px #ff0066;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .romance-header {
+    flex-direction: column;
+    padding: 1.5rem 2rem;
+  }
+  .romance-text {
+    max-width: 100%;
+  }
+  .framed-image {
+    width: 250px;
+  }
+  .romance-book-list {
+    gap: 30px;
+  }
+  .romance-book-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .romance-title {
+    font-size: 2.5rem;
+  }
+  .romance-subtitle {
+    font-size: 1.5rem;
+  }
+  .romance-book-list {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .romance-book-card {
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 768px) {
+  /* Adjust the layout for smaller screens */
+  .romance-header {
+    padding: 2rem 10px;  /* Adjust padding for mobile */
+    flex-direction: column; /* Stack the content vertically */
+    gap: 1rem; /* Reduce the gap between text and image */
+  }
+
+  .romance-text {
+    max-width: 90%; /* Make text container more compact */
+    margin-bottom: 0; /* Remove bottom margin to eliminate unnecessary space */
+  }
+
+  .romance-title {
+    font-size: 3rem;  /* Adjust title size for smaller screens */
+    margin-top: 0;
+  }
+
+  .romance-subtitle {
+    font-size: 1.5rem; /* Adjust subtitle size */
+    margin-top: 10px;
+  }
+
+  .image-frame {
+    margin-top: 20px; /* Adjust margin for image */
+    max-width: 90%; /* Limit the maximum width of the image container */
+    overflow: hidden; /* Ensure no part of the image goes outside the frame */
+  }
+
+  .framed-image {
+    width: 100%;  /* Make the image take up the full width of the container */
+    height: auto;  /* Maintain aspect ratio */
+    max-height: 300px;  /* Limit image height to a reasonable size */
+  }
+}
+
+@media (max-width: 480px) {
+  .romance-title {
+    font-size: 2rem;
+  }
+  .romance-subtitle {
+    font-size: 1.2rem;
+  }
+  .romance-book-info {
+    padding: 8px;
+  }
+  .romance-read-more {
+    padding: 10px 18px;
+  }
+  .romance-book-card {
+    width: 90%;
+  }
+}

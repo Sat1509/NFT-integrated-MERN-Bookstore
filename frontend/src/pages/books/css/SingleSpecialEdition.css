@@ -1,0 +1,153 @@
+.sse-container {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: linear-gradient(to right, #0E0E0E, #1A1A2E); 
+    border-radius: 20px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.85);
+    font-family: 'Playfair Display', serif;
+    color: #EAE0D5;
+    animation: fadeIn 0.7s ease-in-out;
+  }
+  
+  .sse-card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .sse-card {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  
+  .sse-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+  }
+  
+  .sse-image-wrapper {
+    flex-shrink: 0;
+    max-width: 320px;
+    margin: auto;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #111;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
+    position: relative;
+  }
+  
+  .sse-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 14px;
+    filter: grayscale(5%) contrast(105%);
+  }
+  
+  .sse-details {
+    flex: 1;
+    padding: 0 1rem;
+  }
+  
+  .sse-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #E2CFC3;
+    margin-bottom: 0.4rem;
+  }
+  
+  .sse-author,
+  .sse-category {
+    font-size: 1rem;
+    color: #A9A9B3;
+    margin-bottom: 0.5rem;
+  }
+  
+  .sse-description {
+    font-size: 1.05rem;
+    line-height: 1.65;
+    color: #D6D2CD;
+    margin-bottom: 1.2rem;
+  }
+  
+  .sse-nft-meta {
+    font-size: 0.9rem;
+    font-style: italic;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 0.7rem 1rem;
+    border-radius: 10px;
+    color: #888;
+    border-left: 3px solid #444;
+    word-break: break-word;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sse-ipfs-link {
+    color: #C19A6B;
+    text-decoration: underline dotted;
+    word-break: break-word;
+    transition: color 0.2s ease;
+  }
+  
+  .sse-ipfs-link:hover {
+    color: #FFF0E5;
+  }
+  
+  .sse-price {
+    font-size: 1.8rem;
+    color: #C19A6B;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .sse-purchase-btn {
+    padding: 0.8rem 2rem;
+    background-color: #2B1F1D;
+    color: #F5E1DA;
+    font-size: 1.05rem;
+    border: 1px solid #5A3E36;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .sse-purchase-btn:hover {
+    background-color: #5A3E36;
+    color: #FFF0E5;
+    transform: scale(1.03);
+  }
+  
+  /* Loading and error messages */
+  .sse-loading,
+  .sse-error {
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 5rem;
+    color: #ccc;
+    font-style: italic;
+  }
+  
+  /* Optional: Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,212 @@
+/* General Styling */
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #002147; /* Dark Purple */
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+}
+
+/* Left Section */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #f3c8dd; /* Light Pink */
+    font-size: 1.5rem;
+}
+
+.hamburger-menu:hover {
+    color: #d183a9; /* Bright Pink */
+}
+
+.home-button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #f3c8dd; /* Light Pink */
+    font-size: 1.5rem;
+}
+
+.home-button:hover {
+    color: #d183a9; /* Bright Pink */
+}
+/* Search Input */
+.search-container {
+    position: relative;
+    width: 20rem;
+}
+
+.search-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #71557a; /* Soft Purple */
+}
+
+.search-input {
+    width: 100%;
+    padding: 0.5rem 2.5rem;
+    background-color: rgba(243, 200, 221, 0.1);
+    border: 1px solid #71557a; /* Soft Purple */
+    border-radius: 2rem;
+    color: #f3c8dd; /* Light Pink */
+    font-size: 0.9rem;
+}
+
+.search-input::placeholder {
+    color: #71557a; /* Soft Purple */
+}
+
+/* Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* Avatar Styles */
+.avatar-container {
+    position: relative;
+}
+
+.avatar-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.avatar-image {
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+.avatar-ring {
+    border: 2px solid #d183a9; /* Bright Pink */
+}
+
+/* Dropdown Menu */
+.avatar-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #f3c8dd; /* Light Pink */
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    min-width: 200px;
+    font-family: Courier, monospace;
+}
+
+.dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-item {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: #3a345b; /* Dark Purple */
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    background-color: #d183a9; /* Bright Pink */
+    color: white;
+}
+
+dropdown-item logout-btn{
+    font-family: 'cinzel';
+}
+.logout-btn {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #f3c8dd; /* Light Pink */
+    font-size: 1.5rem;
+    display: none;
+}
+
+.user-icon{
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #f3c8dd; /* Light Pink */
+    font-size: 1.4rem; 
+}
+.wishlist-btn:hover {
+    color: #d183a9; /* Bright Pink */
+}
+
+/* Cart Link */
+.cart-link {
+    position: relative;
+    color: #f3c8dd; /* Light Pink */
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.cart-icon {
+    display: block;
+}
+
+.cart-item-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #d183a9; /* Bright Pink */
+    color: white;
+    font-size: 0.75rem;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .search-container {
+        display: none; /* Hide search on mobile */
+    }
+
+    .navbar-left {
+        gap: 1rem;
+    }
+
+    .navbar-right {
+        gap: 1rem;
+    }
+
+    .wishlist-btn {
+        display: none; /* Hide wishlist on mobile */
+    }
+}

@@ -1,0 +1,21 @@
+.trending-books {
+    background-color: #f5e1da; /* Matches your bookstore theme */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.trending-books ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.trending-books li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.trending-books img {
+    border-radius: 4px;
+    margin-right: 10px;
+}

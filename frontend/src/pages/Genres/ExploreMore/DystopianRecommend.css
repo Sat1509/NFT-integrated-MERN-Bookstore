@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap');
+
+.dystopian-rc-container {
+  width: 100%;
+  padding: 40px 20px;
+  font-family: "Playfair Display", serif;
+  color: #dfd3c3;
+  background-color: #141414;
+  position: relative;
+  overflow: hidden;
+}
+
+.dystopian-rc-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../../assets/glass.jpeg');
+  opacity: 0.04;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.dystopian-rc-heading {
+  font-size: 2.8rem;
+  text-align: center;
+  color: #a04747;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+.dystopian-rc-no-books {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #a19288;
+  position: relative;
+  z-index: 1;
+}
+
+.dystopian-rc-swiper {
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.dystopian-rc-book-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dystopian-rc-book-card {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.dystopian-rc-book-card:hover {
+  transform: scale(1.05);
+}
+
+.dystopian-rc-book-cover-container {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dystopian-rc-book-cover {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 5px;
+  filter: contrast(1.1) brightness(0.9);
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.05);
+}
+
+.dystopian-rc-book-info {
+  padding: 20px;
+}
+
+.dystopian-rc-book-title {
+  font-size: 1.4rem;
+  color: #a04747;
+  margin-bottom: 10px;
+}
+
+.dystopian-rc-book-description {
+  font-size: 1rem;
+  color: #a19288;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dystopian-rc-book-price {
+  font-size: 1.1rem;
+  color: #dfd3c3;
+  margin-bottom: 15px;
+}
+
+.dystopian-rc-read-more {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #a04747;
+  color: #a04747;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dystopian-rc-read-more:hover {
+  background: #a04747;
+  color: #141414;
+}
+
+/* Dystopian Swiper container */
+.dystopian-swiper-container {
+  padding: 20px 0;
+  position: relative;
+  z-index: 1;
+}
+
+/* Dystopian Navigation Buttons */
+.dystopian-swiper .swiper-button-next,
+.dystopian-swiper .swiper-button-prev {
+  color: #a04747; /* Dystopian Accent Color */
+  transition: color 0.3s ease;
+}
+
+.dystopian-swiper .swiper-button-next:hover,
+.dystopian-swiper .swiper-button-prev:hover {
+  color: #dfd3c3; /* Hover Color */
+}
+
+.dystopian-swiper .swiper-button-next::after,
+.dystopian-swiper .swiper-button-prev::after {
+    font-size: 30px; /* Adjust as needed */
+}
+
+.dystopian-swiper .swiper-button-prev::after {
+  content: "\2190"; /* Left arrow */
+}
+
+.dystopian-swiper .swiper-button-next::after {
+  content: "\2192"; /* Right arrow */
+}

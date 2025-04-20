@@ -1,0 +1,65 @@
+/* Primary Colors */
+:root {
+    --primary-color: #3a345b;
+    --secondary-color: #f3c8dd;
+    --tertiary-color: #d183a9;
+    --quaternary-color: #71557a;
+    --quinary-color: #4b1535;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+
+.order-item {
+    border-bottom: 1px solid var(--primary-color);
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
+.order-number {
+    padding: 8px;
+    background-color: var(--secondary-color);
+    color: white;
+    width: 40px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+.order-id {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.order-details {
+    color: #4a4a4a;
+}
+
+.address-header, .product-header {
+    font-weight: 600;
+    margin-top: 16px;
+    color: var(--primary-color);
+}
+
+.address {
+    color: #4a4a4a;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    color: var(--primary-color);
+}

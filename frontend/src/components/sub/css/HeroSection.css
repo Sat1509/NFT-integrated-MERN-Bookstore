@@ -1,0 +1,122 @@
+/* General Hero Section Styling */
+.hero {
+  text-align: center;
+  padding: 40px 20px; /* Reduced top padding */
+  background: linear-gradient(to bottom, #1a1a2e, #3e2c41);
+  color: #fff;
+  font-family: "Garamond", serif;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Adjust if needed */
+  padding: 2rem;
+}
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 3rem; /* Space between text and books */
+}
+
+.hero-text {
+  flex: 1;
+  max-width: 50%;
+}
+
+.books-container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.book img {
+  width: 150px; /* Adjust size if needed */
+  height: auto;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.5s ease-out forwards;
+}
+
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 22px;
+  color: #e0aaff;
+  margin-top: 15px;
+}
+
+.books-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 40px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 2s ease-out forwards 0.5s;
+}
+
+.book {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.book img {
+  width: 180px;
+  height: 260px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.book-title {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #e0aaff;
+}
+
+.book:hover {
+  transform: scale(1.05);
+}
+
+.glow {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

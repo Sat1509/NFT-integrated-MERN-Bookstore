@@ -1,0 +1,139 @@
+/* General Section */
+.watch-me-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAF8F6; /* Soft neutral base */
+    padding: 50px;
+    border-radius: 12px;
+    max-width: 1200px;
+    margin: 40px auto;
+    border: 2px solid #B89E69; /* Subtle gold detailing */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
+    position: relative; /* Required for the overlay */
+}
+
+/* Left Text Section */
+.watch-me-text {
+    flex: 1;
+    padding-right: 50px;
+}
+
+.watch-me-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    color: #2C2C2C;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.watch-me-text p {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    color: #4A4A4A;
+    line-height: 1.6;
+}
+
+/* Button (Warner’s Dark Luxury) */
+.watch-me-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    font-family: 'Lora', serif;
+    text-decoration: none;
+    color: white;
+    background-color: #1F2937; /* Deep Navy */
+    border: 2px solid #B89E69; /* Gold border */
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.watch-me-btn:hover {
+    background-color: #B89E69; /* Gold hover effect */
+    color: #1F2937;
+}
+
+/* Right Image Section */
+.watch-me-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Required for the overlay */
+}
+
+.watch-me-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
+    border: 2px solid #1F2937; /* Deep navy frame */
+    transition: opacity 0.3s ease; /* Smooth transition for the image itself */
+}
+
+.watch-me-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 76%;
+    height: 100%;
+    background-image: url("../../../assets/notinsane.jpeg"); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.1; /* Adjust for desired transparency */
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+    z-index: 2; /* Goes on top of border */
+}
+
+.watch-me-image:hover::before {
+    opacity: 0; /* Hide overlay on hover */
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    /* Stack text and image vertically */
+    .watch-me-section {
+        flex-direction: column;
+        padding: 30px 15px; /* Adjust padding for smaller screens */
+        margin: 20px auto; /* Reduce margin for smaller screens */
+    }
+
+    /* Adjust text section for smaller screens */
+    .watch-me-text {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .watch-me-text h2 {
+        font-size: 2.2rem; /* Reduce heading size */
+    }
+
+    .watch-me-text p {
+        font-size: 1rem; /* Reduce paragraph font size */
+    }
+
+    /* Adjust button size and spacing */
+    .watch-me-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+
+    /* Adjust image size */
+    .watch-me-image img {
+        max-width: 80%; /* Make image smaller */
+        max-height: 300px; /* Limit image height */
+    }
+
+    /* Reduce image overlay size */
+    .watch-me-image::before {
+        width: 100%; /* Make overlay cover entire image */
+        opacity: 0.1; /* Keep transparency */
+    }
+}

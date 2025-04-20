@@ -1,0 +1,30 @@
+/* Container for the chart */
+.revenue-chart-container {
+    width: 100%;
+    max-width: 768px; /* Equivalent to max-w-3xl in Tailwind */
+    margin: 0 auto;
+    padding: 16px; /* Equivalent to p-4 in Tailwind */
+    background-color: #ffffff; /* White background */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; /* Shadow-lg equivalent */
+    border-radius: 8px; /* Rounded-lg equivalent */
+}
+
+/* Title for the chart */
+.revenue-chart-title {
+    text-align: center;
+    font-size: 1.5rem; /* Equivalent to text-2xl in Tailwind */
+    font-weight: bold;
+    color: #3a345b; /* Dark purple from your color scheme */
+    margin-bottom: 16px; /* Equivalent to mb-4 in Tailwind */
+}
+
+/* Wrapper for the chart (responsive behavior) */
+.chart-wrapper {
+    display: none; /* Hidden by default (equivalent to hidden in Tailwind) */
+}
+
+@media (min-width: 768px) { /* Equivalent to md:block in Tailwind */
+    .chart-wrapper {
+        display: block;
+    }
+}

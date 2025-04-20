@@ -1,0 +1,29 @@
+/* Container for the select field */
+.select-field-container {
+    margin-bottom: 1rem; /* Equivalent to mb-4 in Tailwind */
+}
+
+/* Label for the select field */
+.select-label {
+    display: block;
+    font-size: 0.875rem; /* Equivalent to text-sm in Tailwind */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: #3a345b; /* Dark purple from your color scheme */
+    margin-bottom: 0.5rem;
+}
+
+/* Select element styling */
+.select-element {
+    width: 100%;
+    padding: 0.5rem; /* Equivalent to p-2 in Tailwind */
+    border: 1px solid #d183a9; /* Medium pink border */
+    border-radius: 0.375rem; /* Equivalent to rounded-md in Tailwind */
+    font-size: 1rem;
+    color: #3a345b; /* Dark purple text */
+}
+
+.select-element:focus {
+    outline: none;
+    border-color: #4b1535; /* Dark maroon on focus */
+    box-shadow: 0 0 0 2px #f3c8dd; /* Light pink focus ring */
+}

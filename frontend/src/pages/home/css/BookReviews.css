@@ -1,0 +1,91 @@
+.book-reviews-container {
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+    background-color: #f3c8dd; /* Soft Pink (Swapped from Navy) */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .book-reviews-container h2 {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    color: #002147; /* Deep Navy (Swapped from Soft Pink) */
+    margin-bottom: 1.5rem;
+  }
+  
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .review-item {
+    background-color: #002147; /* Deep Navy (Swapped from Soft Pink) */
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .review-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.3s ease;
+  }
+  
+  .review-image:not([src]) {
+    opacity: 0;
+  }
+  
+  .review-content {
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .review-title {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #f3c8dd; /* Soft Pink (Swapped from Dark Purple) */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .review-summary {
+    font-size: 14px;
+    color: #f3c8dd; /* Soft Pink (Swapped from Dark Purple) */
+    margin-bottom: 1rem;
+  }
+  
+  .review-author {
+    font-size: 12px;
+    font-weight: bold;
+    color: #3a345b; /* Dark Purple (Swapped from Deep Navy) */
+  }
+  
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .review-item {
+        grid-template-columns: 1fr; /* Stack on smaller screens */
+        height: auto;
+        flex-direction: column;
+    }
+
+    .review-image {
+        border-radius: 8px 8px 0 0; /* Top corners rounded on small screens */
+    }
+}

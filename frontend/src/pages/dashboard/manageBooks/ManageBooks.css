@@ -1,0 +1,182 @@
+/* Manage Books Section */
+.manage-books-section {
+    padding: 0.5rem 0;
+    background-color: #f3c8dd;
+}
+
+/* Container */
+.manage-books-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 4rem auto 3rem;
+    padding: 0 1rem;
+}
+
+/* Content Wrapper */
+.manage-books-content {
+    background-color: #ffffff;
+    border-radius: 0.75rem; /* Increased border radius for softer corners */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+}
+
+/* Header */
+.manage-books-header {
+    padding: 1.5rem; /* Increased padding for better spacing */
+    border-bottom: 2px solid #d183a9; /* Slightly thicker border */
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: 700; /* Increased font weight for emphasis */
+    font-size: 1.5rem; /* Larger font size for better readability */
+    color: #3a345b;
+}
+
+/* See All Button */
+.see-all-button {
+    background-color: #71557a;
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.85rem; /* Slightly larger font size */
+    padding: 0.5rem 1.25rem; /* Adjusted padding for better proportions */
+    border: none;
+    border-radius: 0.5rem; /* Rounded corners for a modern look */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+.see-all-button:hover {
+    background-color: #4b1535;
+    transform: scale(1.05); /* Subtle hover scaling effect */
+}
+
+/* Table Container */
+.table-container {
+    overflow-x: auto;
+}
+
+/* Table Styling */
+.books-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.table-header {
+    padding: 1rem; /* Increased padding for better spacing */
+    background-color: #d183a9; /* Changed header background for contrast */
+    color: #ffffff; /* White text for better readability */
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: bold; /* Bold headers for emphasis */
+    text-align: left;
+}
+
+.table-cell {
+    padding: 1rem; /* Increased padding for better spacing */
+    font-size: 0.9rem; /* Slightly larger font size */
+    color: #3a345b;
+    border-bottom: 1px solid #d183a9; /* Subtle border between rows */
+}
+
+.actions-cell {
+    display: flex;
+    gap: 0.75rem; /* Increased gap between action buttons/links */
+}
+
+/* Edit Link Styling */
+.edit-link {
+    color: #71557a;
+    text-decoration: none;
+    font-weight: bold; /* Bold text for emphasis on links */
+    transition: color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+.edit-link:hover {
+    color: #4b1535;
+}
+
+/* Delete Button Styling */
+.delete-button {
+    background-color: #4b1535;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem; /* Adjusted padding for better proportions */
+    border-radius: 9999px; /* Fully rounded button for a modern look */
+    font-size: 0.85rem; /* Slightly larger font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Added transform transition */
+}
+
+.delete-button:hover {
+    background-color: #3a345b;
+}
+
+@media screen and (max-width: 768px) {
+    .manage-books-container {
+      padding: 0 0.5rem;
+    }
+  
+    .manage-books-header {
+      padding: 1rem;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .title {
+      font-size: 1.25rem;
+      text-align: center;
+    }
+  
+    .see-all-button {
+      font-size: 0.75rem;
+      padding: 0.4rem 1rem;
+    }
+  
+    .table-header,
+    .table-cell {
+      padding: 0.75rem;
+      font-size: 0.8rem;
+    }
+  
+    .actions-cell {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .edit-link,
+    .delete-button {
+      font-size: 0.8rem;
+      padding: 0.4rem 0.75rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .books-table {
+      font-size: 0.75rem;
+    }
+  
+    .table-header,
+    .table-cell {
+      padding: 0.5rem;
+    }
+  
+    .edit-link,
+    .delete-button {
+      padding: 0.35rem 0.6rem;
+      font-size: 0.75rem;
+    }
+  
+    .actions-cell {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  

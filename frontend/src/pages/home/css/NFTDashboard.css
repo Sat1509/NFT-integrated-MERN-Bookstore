@@ -1,0 +1,257 @@
+.nft-dashboard {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    background: #1b1b1f;
+    min-height: 100vh;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .dashboard-box {
+    background: linear-gradient(135deg, #2c2c34, #3e3b4f);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.1);
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: gold;
+    text-align: center;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  .section h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #d6d6f5;
+  }
+  
+  .nft-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+  
+  .nft-card {
+    min-width: 260px;
+    background: #25252b;
+    padding: 20px;
+    border-radius: 16px;
+    border: 1px solid transparent;
+    transition: box-shadow 0.3s, border 0.3s;
+    flex-shrink: 0;
+  }
+  
+  .nft-card h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #f8f8f8;
+  }
+  
+  .nft-card p {
+    font-size: 14px;
+    color: #bbb;
+    margin-bottom: 5px;
+    word-break: break-word;
+  }
+  
+  .nft-card.unclaimed {
+    border: 1px solid gold;
+  }
+  
+  .nft-card.claimed {
+    border: 1px solid #a362ea;
+  }
+  
+  .nft-card:hover {
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.2);
+  }
+  
+  .status.pending {
+    color: gold;
+    font-weight: bold;
+  }
+  
+  .nft-prompt {
+    text-align: center;
+    padding: 100px 20px;
+    color: #eee;
+  }
+  
+  .nft-login-link,
+  .browse-link {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: gold;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .nft-login-link:hover,
+  .browse-link:hover {
+    background-color: #e6c200;
+  }
+  
+  .loading,
+  .error {
+    text-align: center;
+    padding: 100px 20px;
+    font-size: 18px;
+  }
+  
+  .nft-prompt-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1b1b1f;
+  }
+  
+  .nft-prompt-box {
+    background: linear-gradient(135deg, #2e2e38, #3e3b4f);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255, 215, 0, 0.08);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    color: #eee;
+  }
+  
+  .nft-prompt-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: gold;
+  }
+  
+  .delete-btn {
+    background-color: #d72638;
+    color: white;
+    padding: 8px 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .delete-btn:hover {
+    background-color: #b71c2e;
+  }
+  
+  .claim-btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+  }
+  
+  .claim-btn:hover {
+    background-color: #45a049;
+  }
+  
+  /* Disabled Claim Button */
+  .claim-btn:disabled {
+    background-color: #bdbdbd;
+    cursor: not-allowed;
+  }
+
+  .etherscan-link {
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 5px;
+    display: inline-block;
+  }
+  .etherscan-link:hover {
+    color: #1d6fa5;
+  }
+  
+  .details-link {
+    margin-top: 8px;
+    display: inline-block;
+    font-weight: bold;
+    color: #6e4cff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .details-link:hover {
+    color: #4b2bd6;
+  }
+  
+  /* For mobile devices up to 767px */
+@media (max-width: 767px) {
+  .nft-dashboard {
+    padding: 20px 10px;
+    flex-direction: column;
+  }
+
+  .dashboard-box {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .section h3 {
+    font-size: 18px;
+  }
+
+  .nft-card {
+    min-width: 200px;
+    padding: 16px;
+  }
+
+  .nft-card h4 {
+    font-size: 16px;
+  }
+
+  .nft-card p {
+    font-size: 13px;
+  }
+
+  .nft-prompt-box {
+    padding: 20px;
+  }
+
+  .nft-prompt-box h2 {
+    font-size: 20px;
+  }
+
+  .claim-btn,
+  .delete-btn {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+
+/* Ensure book cover images inside cards are fully visible */
+.nft-card img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* prevent cropping */
+  border-radius: 12px;
+  margin-bottom: 10px;
+}

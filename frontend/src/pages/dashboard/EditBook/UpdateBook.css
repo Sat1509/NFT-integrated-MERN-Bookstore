@@ -1,0 +1,56 @@
+.update-book-container {
+    max-width: 32rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.update-book-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #3a345b;
+    margin-bottom: 1rem;
+}
+
+.trending-checkbox {
+    margin-bottom: 1rem;
+}
+
+.trending-label {
+    display: inline-flex;
+    align-items: center;
+}
+
+.trending-input {
+    border-radius: 0.25rem;
+    color: #71557a;
+}
+
+.trending-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #f3c8dd;
+}
+
+.trending-text {
+    margin-left: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #3a345b;
+}
+
+.update-book-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #71557a;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+}
+
+.update-book-button:hover {
+    background-color: #3a345b;
+}

@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+:root {
+  --thriller-dark-blue: #0a1520;
+  --thriller-medium-blue: #1a2a3a;
+  --thriller-light-blue: #2c3e50;
+  --thriller-gray: #3a3a3a;
+  --thriller-light-gray: #e0e0e0;
+  --thriller-white: #ffffff;
+  --thriller-accent: #3498db;
+}
+
+.thriller-rc-container {
+    width: 100%;
+    padding: 40px 20px; /* Reduced side padding */
+    font-family: 'Cinzel', serif;
+    color: var(--thriller-light-gray);
+    background-color: var(--thriller-dark-blue);
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.thriller-rc-heading {
+  font-size: 2.5rem;
+  text-align: center;
+  color: var(--thriller-accent);
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.thriller-rc-no-books {
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--thriller-light-gray);
+}
+
+.thriller-rc-swiper {
+    padding-top: 20px;
+    width: 100%; /* Ensure swiper doesn't exceed container width */
+}
+
+.thriller-rc-book-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.thriller-rc-book-card {
+  background-color: var(--thriller-medium-blue);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%; /* Ensure card doesn't exceed slide width */
+  box-sizing: border-box;
+  align-items: center; /* Center horizontally */
+  text-align: center;
+}
+
+.thriller-rc-book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.thriller-rc-book-cover-container {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+  
+.thriller-rc-book-cover {
+    max-width: 40%;
+    height: auto;
+    object-fit: contain;
+}
+
+.thriller-rc-book-card:hover .thriller-rc-book-cover {
+  transform: scale(1.05);
+}
+
+.thriller-rc-book-info {
+  padding: 15px;
+}
+
+.thriller-rc-book-title {
+  font-size: 1.2rem;
+  color: var(--thriller-white);
+  margin-bottom: 10px;
+}
+
+.thriller-description {
+  font-size: 0.9rem;
+  color: var(--thriller-light-gray);
+  margin-bottom: 10px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.thriller-rc-book-price {
+  font-size: 1.1rem;
+  color: var(--thriller-accent);
+  margin-bottom: 10px;
+}
+
+.thriller-rc-read-more {
+  background-color: var(--thriller-accent);
+  color: var(--thriller-white);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.thriller-rc-read-more:hover {
+  background-color: #2980b9;
+}
+
+.swiper-slide {
+    width: auto; /* Let Swiper handle the width */
+}
+
+/* Thriller Swiper Container */
+.thriller-swiper-container {
+  padding-top: 20px;
+  width: 100%; /* Ensure swiper doesn't exceed container width */
+}
+
+/* Thriller Navigation Buttons */
+.thriller-swiper .swiper-button-next,
+.thriller-swiper .swiper-button-prev {
+  color: var(--thriller-accent); /* Accent Color */
+}
+
+.thriller-swiper .swiper-button-next:hover,
+.thriller-swiper .swiper-button-prev:hover {
+  color: var(--thriller-white); /* Change to white on hover */
+}
+
+.thriller-swiper .swiper-button-next::after,
+.thriller-swiper .swiper-button-prev::after {
+    font-size: 30px; /* Adjust as needed */
+}
+
+.thriller-swiper .swiper-button-prev::after {
+  content: "\2190"; /* Left arrow */
+}
+
+.thriller-swiper .swiper-button-next::after {
+  content: "\2192"; /* Right arrow */
+}
+
+@media (max-width: 768px) {
+  .thriller-rc-container {
+    padding: 20px 10px;
+  }
+
+  .thriller-rc-heading {
+    font-size: 2rem;
+  }
+
+  .thriller-rc-book-cover-container {
+    height: 250px; /* Give more space for the image on tablets */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .thriller-rc-book-cover {
+    max-width: 100%; /* Increase the max-width on mobile */
+    height: 100%;
+    object-fit: contain; /* Keep the image’s aspect ratio */
+  }
+
+  .thriller-rc-book-card {
+    width: 100%;
+    margin-bottom: 20px; /* Add some space between the cards */
+  }
+
+  .thriller-rc-book-title {
+    font-size: 1rem; /* Slightly smaller title for smaller screens */
+  }
+
+  .thriller-description {
+    font-size: 0.8rem; /* Adjust description text size */
+  }
+
+  .thriller-rc-book-price {
+    font-size: 1rem; /* Adjust price font size */
+  }
+
+  .thriller-rc-read-more {
+    padding: 6px 12px; /* Reduce padding */
+  }
+
+  .swiper-slide {
+    width: 100%; /* Make the slides take up full width on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .thriller-rc-heading {
+    font-size: 1.5rem; /* Smaller heading for small screens */
+  }
+
+  .thriller-rc-book-title {
+    font-size: 0.9rem; /* Adjust the font size for mobile screens */
+  }
+
+  .thriller-description {
+    font-size: 0.75rem; /* Smaller description text */
+  }
+
+  .thriller-rc-book-price {
+    font-size: 0.9rem; /* Adjust price font size for mobile */
+  }
+
+  .thriller-rc-read-more {
+    padding: 5px 10px; /* Further reduce padding */
+  }
+
+  .thriller-rc-book-cover-container {
+    height: 220px; /* Adjust container height for very small screens */
+  }
+
+  .thriller-rc-book-cover {
+    max-height: 90%; /* Increase the max-width to 90% on small screens */
+  }
+}

@@ -1,0 +1,61 @@
+.genre-section {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  background-color: #002147; /* Dark Purple */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.genre-heading {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: #f3c8dd; /* Light Pink */
+  margin-bottom: 1.5rem;
+}
+
+.genre-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.genre-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  background-color: #f3c8dd; /* Light Pink */
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.genre-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.genre-tile img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+
+.genre-tile img:not([src]) {
+  opacity: 0;
+}
+
+.genre-tile p {
+  padding: 1rem;
+  font-weight: bold;
+  text-align: center;
+  color: #3a345b; /* Dark Purple */
+}

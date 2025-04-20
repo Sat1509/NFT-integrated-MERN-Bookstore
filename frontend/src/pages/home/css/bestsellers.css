@@ -1,0 +1,57 @@
+/* NYTBestsellers.css */
+.nyt-bestsellers-container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f5e1da; /* Light beige background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nyt-bestsellers-heading {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #ab3f60; /* Deep pink color */
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .error-message {
+    color: #83092e; /* Dark red color */
+    text-align: center;
+  }
+  
+  .bestsellers-list-container {
+    padding: 20px;
+  }
+  
+  .bestsellers-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .bestseller-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #ffffff; /* White background */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .book-info {
+    padding: 10px;
+  }
+  
+  .book-title {
+    font-size: 1.2rem;
+    color: #ab3f60; /* Deep pink color */
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .book-author {
+    font-size: 1rem;
+    color: #6b1a22; /* Dark brown color */
+  }
+  

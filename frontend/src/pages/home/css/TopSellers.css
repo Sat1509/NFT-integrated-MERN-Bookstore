@@ -1,0 +1,128 @@
+.ts-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .ts-heading {
+    font-size: 24px;
+    color: #3a345b;
+    margin-bottom: 20px;
+  }
+  
+  .ts-select {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #71557a;
+    border-radius: 5px;
+    background-color: #f3c8dd;
+    color: #3a345b;
+    font-family: Montserrat, sans-serif;
+  }
+  
+  .ts-no-books {
+    color: #71557a;
+    font-style: italic;
+  }
+  
+  .ts-swiper {
+    padding: 20px 30px;
+  }
+  
+  .ts-book-card {
+    display: flex;
+    background-color: #f3c8dd;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    height: 250px;
+  }
+  
+  .ts-book-link {
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.ts-book-title, .ts-book-description {
+    text-decoration: none; /* Ensure no underline */
+}
+
+  .ts-book-cover {
+    width: 120px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+  }
+  
+  .ts-book-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    
+  }
+  
+  .ts-book-title {
+    font-size: 18px;
+    color: #3a345b;
+    margin-bottom: 10px;
+  }
+  
+  .ts-book-description {
+    font-size: 14px;
+    color: #71557a;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin-bottom: 10px;
+  }
+  
+  .ts-book-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d183a9; /* Bright Pink */
+    margin-bottom: 10px;
+  }
+  
+  .ts-new-price {
+    color: #002147; /* Bright Pink */
+  }
+  
+  .ts-old-price {
+    color: #71557a; /* Soft Purple */
+    text-decoration: line-through;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  
+  .ts-add-to-cart-btn {
+    background-color: #002147;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ts-add-to-cart-btn:hover {
+    background-color: #3a345b;
+  }
+  
+  /* Custom Swiper button styles */
+  .ts-swiper .swiper-button-next,
+  .ts-swiper .swiper-button-prev {
+    color: #d183a9;
+    width: 30px;
+    height: 30px;
+  }
+  
+  .ts-swiper .swiper-button-next:after,
+  .ts-swiper .swiper-button-prev:after {
+    font-size: 20px;
+  }
+  

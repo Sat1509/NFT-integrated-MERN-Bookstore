@@ -1,0 +1,115 @@
+/* Primary Colors */
+:root {
+    --primary-color: #002147; /* Oxford Blue */
+    --secondary-color: #f3c8dd; /* Light color */
+    --tertiary-color: #d183a9; /* Accent color */
+    --quaternary-color: #71557a; /* Darker accent */
+    --quinary-color: #4b1535; /* Deep blue */
+}
+
+
+
+/* Container for the entire book section */
+.single-book-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: var(--secondary-color);
+}
+
+/* Card styling */
+.single-book-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    background-color: #002147; /* Oxford Blue */
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Content wrapper for proper alignment */
+.single-book-content-wrapper {
+    display: flex;
+    padding: 24px;
+}
+
+/* Image wrapper for proper alignment */
+.single-book-image-wrapper {
+    width: 40%;
+    margin-right: 20px;
+}
+
+.single-book-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Details section */
+.single-book-details {
+    width: 60%;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.single-book-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.single-book-author,
+.single-book-published,
+.single-book-category,
+.single-book-description {
+    font-size: 1rem;
+    margin-bottom: 12px;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.single-book-author strong,
+.single-book-published strong,
+.single-book-category strong {
+    color: var(--secondary-color); /* Deep blue */
+}
+
+.single-book-capitalize {
+    text-transform: capitalize;
+}
+
+/* Button styling */
+.single-book-btn-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background-color: var(--tertiary-color); /* Accent color */
+    color: white;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+.single-book-btn-primary:hover {
+    background-color: var(--quaternary-color); /* Darker accent */
+}
+
+/* Loading and Error States */
+.single-book-loading,
+.single-book-error {
+    text-align: center;
+    font-size: 1.5rem;
+}
+.single-book-loading {
+    color: var(--primary-color);
+}
+.single-book-error {
+    color: var(--tertiary-color);
+}

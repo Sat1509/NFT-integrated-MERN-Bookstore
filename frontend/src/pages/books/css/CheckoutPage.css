@@ -1,0 +1,109 @@
+/* Checkout Page Styles */
+.checkout-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5E1DA; /* Warm book page beige */
+    padding: 2rem;
+}
+
+.checkout-wrapper {
+    background: #f3c8dd; /* Dark Academia */
+    color: #002147;
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #002147; /* Romance */
+    margin-bottom: 1rem;
+}
+
+.checkout-text {
+    font-size: 16px;
+    color: #002147; /* Fantasy */
+}
+
+.checkout-form-container {
+    background: #002147; /* Dystopian */
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.form-header {
+    margin-bottom: 1rem;
+    color: white; /* Dystopian */
+}
+
+.form-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+    color: #f3c8dd; /* Parchment */
+}
+
+.input-field {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background: #f3c8dd; /* Parchment */
+    color: #3E2C41;
+}
+
+.terms {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.terms input {
+    margin-right: 0.5rem;
+}
+
+.link {
+    color: #E0AAFF;
+    text-decoration: underline;
+}
+
+.checkout-button {
+    width: 100%;
+    background-color: #5A3E36; /* Romance */
+    color: #F5E1DA;
+    border: none;
+    padding: 0.75rem;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #D72638; /* Horror */
+}
+
+.checkout-button:disabled {
+    background-color: #3E2C41;
+    cursor: not-allowed;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    color: #D72638;
+}

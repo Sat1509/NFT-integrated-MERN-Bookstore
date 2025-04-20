@@ -1,0 +1,109 @@
+.rc-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.rc-heading {
+  font-size: 24px;
+  font-family: Montserrat, sans-serif;
+  color: #3a345b;
+  margin-bottom: 20px;
+}
+
+.rc-no-books {
+  color: #71557a;
+  font-style: italic;
+}
+
+.rc-swiper {
+  padding: 20px 30px;
+}
+
+.rc-book-card {
+  display: flex;
+  background-color: #002147;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  height: 250px;
+}
+
+.rc-book-cover {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 15px;
+}
+
+.rc-book-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.rc-book-title {
+  font-size: 18px;
+  color: white;
+  margin-bottom: 10px;
+  font-family: Montserrat;
+}
+
+.rc-book-description {
+  font-size: 14px;
+  color: white;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-family: Montserrat;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.rc-book-price {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.old-price {
+  display: inline-block;
+  color: #f3c8dd;
+  text-decoration: line-through;
+  margin-right: 20px;
+}
+
+.new-price {
+  display: inline-block;
+  color: white;
+}
+
+.rc-add-to-cart-btn {
+  background-color: #f3c8dd;
+  color: #002147;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.rc-add-to-cart-btn:hover {
+  background-color: #d183a9;
+}
+
+/* Custom Swiper button styles */
+.rc-swiper .swiper-button-next,
+.rc-swiper .swiper-button-prev {
+  color: #002147;
+  width: 30px;
+  height: 30px;
+}
+
+.rc-swiper .swiper-button-next:after,
+.rc-swiper .swiper-button-prev:after {
+  font-size: 20px;
+}

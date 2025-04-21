@@ -4,7 +4,7 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const port = process.env.PORT || 5002;
+const port = process.env.PORT || 8080;
 
 // Middleware
 app.use(express.json());

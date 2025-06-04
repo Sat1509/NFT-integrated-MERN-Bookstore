@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom"; // Import Link
 import footerLogo from "../assets/footer-logo.png";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
-//import './css/footer.css'; // Import the CSS file
+import './css/Footer.css'; // Import the CSS file
 
 const Footer = () => {
   return (

@@ -91,7 +91,7 @@ const NFTDashboard = () => {
 
   const getBookDetails = async (bookId) => {
     try {
-      const response = await fetch(`http://localhost:5002/api/special-edition/${bookId}`);
+      const response = await fetch(`https://nft-integrated-mern-bookstore-6mvs.vercel.app/api/special-edition/${bookId}`);
       if (!response.ok) {
         throw new Error("Failed to fetch book details");
       }

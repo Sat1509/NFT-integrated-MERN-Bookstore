@@ -9,7 +9,7 @@ const BookReviews = () => {
     useEffect(() => {
         const fetchBookReviews = async () => {
             try {
-                const response = await fetch('http://localhost:5002/api/book-reviews');
+                const response = await fetch('https://nft-integrated-mern-bookstore-6mvs.vercel.app/api/book-reviews');
 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);

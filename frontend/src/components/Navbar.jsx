@@ -41,7 +41,7 @@ const Navbar = () => {
         }
         try {
             // Calling the /api/book/search api
-            const response = await fetch(`http://localhost:5002/api/books/search?q=${searchTerm}`);
+            const response = await fetch(`https://nft-integrated-mern-bookstore-6mvs.vercel.app/api/books/search?q=${searchTerm}`);
             if (!response.ok) {
                 if (response.status === 404) {
                     alert('Book not available');

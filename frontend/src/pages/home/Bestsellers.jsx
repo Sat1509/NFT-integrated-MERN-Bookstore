@@ -8,7 +8,7 @@ const NYTBestsellers = () => {
   useEffect(() => {
     const fetchBestsellers = async () => {
       try {
-        const response = await fetch('http://localhost:5002/api/nyt-bestsellers');
+        const response = await fetch('https://nft-integrated-mern-bookstore-6mvs.vercel.app/api/nyt-bestsellers');
         
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);

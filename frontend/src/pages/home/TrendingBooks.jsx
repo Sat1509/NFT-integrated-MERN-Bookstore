@@ -25,7 +25,7 @@ const TrendingBooks = () => {
 
             // Fetch new data if cache is invalid or absent
             try {
-                const response = await fetch("http://localhost:5002/api/trending-books");
+                const response = await fetch("https://nft-integrated-mern-bookstore-6mvs.vercel.app/api/trending-books");
                 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);

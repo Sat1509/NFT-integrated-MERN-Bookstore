@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Enable CORS with specific origins and credentials
 app.use(cors({
-    origin: ['http://localhost:5175', 'https://book-app-frontend-tau.vercel.app'],
+    origin: ['http://localhost:5175', 'https://nft-integrated-mern-bookstore-4oeupuju7-sathammai-s-projects.vercel.app/'],
     credentials: true,
     exposedHeaders: ['Authorization'] // This is important for cookies and sessions
 }));

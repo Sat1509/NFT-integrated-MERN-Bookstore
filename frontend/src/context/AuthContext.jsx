@@ -12,7 +12,7 @@ import { signOut } from "firebase/auth";
 
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:5002', // Correct backend URL
+  baseURL: 'https://nft-integrated-mern-bookstore-6mvs.vercel.app', // Correct backend URL
 });
 
 export const AuthContext = createContext();

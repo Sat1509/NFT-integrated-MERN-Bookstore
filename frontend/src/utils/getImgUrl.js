@@ -1,6 +1,6 @@
 function getImgUrl(name) {
     if (!name) {
-        return new URL('../assets/books/default-cover.jpg', import.meta.url).href; // Fallback image
+        return new URL('../assets/books/default-cover.jpeg', import.meta.url).href; // Fallback image
     }
 
     // If it's an external URL, return as is

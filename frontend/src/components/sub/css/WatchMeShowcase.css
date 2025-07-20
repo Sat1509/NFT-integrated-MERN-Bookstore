@@ -10,7 +10,7 @@
     margin: 40px auto;
     border: 2px solid #B89E69; /* Subtle gold detailing */
     box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.15);
-    position: relative; /* Required for the overlay */
+    position: relative;
 }
 
 /* Left Text Section */
@@ -52,7 +52,7 @@
 }
 
 .watch-me-btn:hover {
-    background-color: #B89E69; /* Gold hover effect */
+    background-color: #B89E69;
     color: #1F2937;
 }
 
@@ -62,7 +62,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Required for the overlay */
+    position: relative;
+    overflow: hidden;
 }
 
 .watch-me-image img {
@@ -70,41 +71,38 @@
     max-width: 400px;
     border-radius: 10px;
     box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.2);
-    border: 2px solid #1F2937; /* Deep navy frame */
-    transition: opacity 0.3s ease; /* Smooth transition for the image itself */
+    border: 2px solid #1F2937;
+    transition: opacity 0.3s ease;
+    position: relative;
+    z-index: 1;
 }
 
 .watch-me-image::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 60px;
-    width: 76%;
-    height: 100%;
-    background-image: url("../../../assets/notinsane.jpeg"); /* Replace with your image path */
+    inset: 0;
+    background-image: url("../../../assets/notinsane.jpeg");
     background-size: cover;
     background-position: center;
-    opacity: 0.1; /* Adjust for desired transparency */
+    opacity: 0.1;
     border-radius: 10px;
     transition: opacity 0.3s ease;
     pointer-events: none;
-    z-index: 2; /* Goes on top of border */
+    z-index: 2;
 }
 
 .watch-me-image:hover::before {
-    opacity: 0; /* Hide overlay on hover */
+    opacity: 0;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
-    /* Stack text and image vertically */
     .watch-me-section {
         flex-direction: column;
-        padding: 30px 15px; /* Adjust padding for smaller screens */
-        margin: 20px auto; /* Reduce margin for smaller screens */
+        padding: 30px 15px;
+        margin: 20px auto;
     }
 
-    /* Adjust text section for smaller screens */
     .watch-me-text {
         padding-right: 0;
         text-align: center;
@@ -112,28 +110,20 @@
     }
 
     .watch-me-text h2 {
-        font-size: 2.2rem; /* Reduce heading size */
+        font-size: 2.2rem;
     }
 
     .watch-me-text p {
-        font-size: 1rem; /* Reduce paragraph font size */
+        font-size: 1rem;
     }
 
-    /* Adjust button size and spacing */
     .watch-me-btn {
         padding: 10px 20px;
         font-size: 1rem;
     }
 
-    /* Adjust image size */
     .watch-me-image img {
-        max-width: 80%; /* Make image smaller */
-        max-height: 300px; /* Limit image height */
-    }
-
-    /* Reduce image overlay size */
-    .watch-me-image::before {
-        width: 100%; /* Make overlay cover entire image */
-        opacity: 0.1; /* Keep transparency */
+        max-width: 80%;
+        max-height: 300px;
     }
 }
